@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Смачні Рецепти</title>
+    <title>Світ Рецептів</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    
     <header>
-        <h1>Мій Кулінарний Блокнот</h1>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Пошук рецепту...">
-        </div>
-        <nav>
-            <button class="filter-btn" data-category="all">Всі</button>
-            <button class="filter-btn" data-category="breakfast">Сніданок</button>
-            <button class="filter-btn" data-category="lunch">Обід</button>
-            <button class="filter-btn" data-category="dessert">Десерти</button>
-        </nav>
+        <h1>Смачні Рецепти</h1>
+        <p>Обери свій ідеальний прийом їжі</p>
     </header>
 
-    <main id="recipeGrid" class="recipe-grid">
-        <!-- Рецепти з'являться тут за допомогою JS -->
+    
+    <nav class="menu-tabs">
+        <button class="tab-btn active" data-category="breakfast">Сніданок</button>
+        <button class="tab-btn" data-category="lunch">Обід</button>
+        <button class="tab-btn" data-category="dinner">Вечеря</button>
+    </nav>
+
+    
+    <main class="recipes-container" id="recipes-grid">
+       
     </main>
 
     <script src="script.js"></script>
